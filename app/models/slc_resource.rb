@@ -3,6 +3,9 @@ require 'uri'
 require 'json'
 
 class SlcResource
+  # hardcode some paths for resources we can use in our quick prototype
+  STUDENTS_URI = '/sections/88c701d291e11e2d17b9554412878cc9bc7d51e6_id/studentSectionAssociations/students'
+
   def self.fetch_resource(uri, token)
     clean_uri = uri.sub(/^\//, '')
 
@@ -20,7 +23,12 @@ class SlcResource
     JSON.parse(response.body)
   end
 
-  def self.fetch_sections(token)
 
+  # parent and/or teacher logs in --> magic --> obtain students
+  def self.fetch_students(token)
+
+    # path for a specific set of students
+
+    fetch_resource(STUDENTS_URI, token)
   end
 end

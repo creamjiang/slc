@@ -28,7 +28,11 @@ class HomeController < ApplicationController
       redirect_to :root
     end
 
-    browse
+    json = SlcResource.fetch_students(session[:token])
+
+    @token = session[:token]
+
+    build_json_display(json)
   end
 
   def browse
@@ -43,11 +47,10 @@ class HomeController < ApplicationController
     @token = session[:token]
 
     build_json_display(json)
-
   end
 
   def some_students
-    params[:path] = '/sections/2758564a1f5b46501ab4c3dffc0685f3001f9d0b_id/studentSectionAssociations/students'
+    params[:path] = SlcResource.STUDENTS_URI
     browse
   end
 

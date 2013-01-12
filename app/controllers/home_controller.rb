@@ -23,6 +23,12 @@ class HomeController < ApplicationController
     redirect_to :secure_home
   end
 
+  def student
+    @title = "Reading"
+    @description = "This is a display for description"
+    @focus_area = "Fluency"
+  end
+
   def secure
     if session[:token].nil?
       redirect_to :root

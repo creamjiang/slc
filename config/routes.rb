@@ -6,6 +6,7 @@ GSSlc::Application.routes.draw do
   match 'secure' => 'home#secure', :as => :secure_home
   match 'browse' => 'home#browse', :as => :browse_resource
   match 'students' => 'home#some_students', :as => :students_resource
+  match 'student' => 'home#student', :as => :student_resource
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

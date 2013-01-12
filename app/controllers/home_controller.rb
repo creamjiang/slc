@@ -41,6 +41,22 @@ class HomeController < ApplicationController
     build_json_display(json)
   end
 
+  def assessments
+    if session[:token].nil?
+      redirect_to :root
+    end
+
+    student_id = nil
+
+    json = SlcResource.fetch_student_assessments(student_id, session[:token])
+
+    @token = session[:token]
+
+    build_json_display(json)
+  end
+
+
+
   def browse
     if session[:token].nil?
       redirect_to :root

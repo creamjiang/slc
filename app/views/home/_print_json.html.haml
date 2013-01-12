@@ -1,0 +1,9 @@
+- @display_objects.each do |display_object|
+    .json-row
+        %pre=display_object[:json]
+        .json-rel
+            - display_object[:links].each do |link|
+                =link_to link['rel'], browse_resource_path(path: parse_resource_path(link['href']))
+                %br
+        %br.clear-float
+

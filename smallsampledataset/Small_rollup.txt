@@ -1,0 +1,112 @@
+INFO  jobId: MainControlFile.ctl-<<< your job id here >>>
+INFO  [file] InterchangeAssessmentMetadata-ACT.xml (edfi-xml/AssessmentMetadata)
+INFO  [file] InterchangeAssessmentMetadata-ACT.xml records considered: 1
+INFO  [file] InterchangeAssessmentMetadata-ACT.xml records ingested successfully: 1
+INFO  [file] InterchangeAssessmentMetadata-ACT.xml records failed: 0
+INFO  [file] InterchangeStudentAssessment-Cgray-ACT.xml (edfi-xml/StudentAssessment)
+INFO  [file] InterchangeStudentAssessment-Cgray-ACT.xml records considered: 25
+INFO  [file] InterchangeStudentAssessment-Cgray-ACT.xml records ingested successfully: 25
+INFO  [file] InterchangeStudentAssessment-Cgray-ACT.xml records failed: 0
+INFO  [file] InterchangeStudentParent.xml (edfi-xml/StudentParent)
+INFO  [file] InterchangeStudentParent.xml records considered: 18
+INFO  [file] InterchangeStudentParent.xml records ingested successfully: 18
+INFO  [file] InterchangeStudentParent.xml records failed: 0
+INFO  [file] InterchangeStudentAssessment-Rbraverman5thgrade.xml (edfi-xml/StudentAssessment)
+INFO  [file] InterchangeStudentAssessment-Rbraverman5thgrade.xml records considered: 2
+INFO  [file] InterchangeStudentAssessment-Rbraverman5thgrade.xml records ingested successfully: 2
+INFO  [file] InterchangeStudentAssessment-Rbraverman5thgrade.xml records failed: 0
+INFO  [file] InterchangeEducationOrgCalendar.xml (edfi-xml/EducationOrgCalendar)
+INFO  [file] InterchangeEducationOrgCalendar.xml records considered: 595
+INFO  [file] InterchangeEducationOrgCalendar.xml records ingested successfully: 595
+INFO  [file] InterchangeEducationOrgCalendar.xml records failed: 0
+INFO  [file] InterchangeAssessmentMetadata-StateAssessments.xml (edfi-xml/AssessmentMetadata)
+INFO  [file] InterchangeAssessmentMetadata-StateAssessments.xml records considered: 12
+INFO  [file] InterchangeAssessmentMetadata-StateAssessments.xml records ingested successfully: 12
+INFO  [file] InterchangeAssessmentMetadata-StateAssessments.xml records failed: 0
+INFO  [file] InterchangeStudentCohort.xml (edfi-xml/StudentCohort)
+INFO  [file] InterchangeStudentCohort.xml records considered: 12
+INFO  [file] InterchangeStudentCohort.xml records ingested successfully: 12
+INFO  [file] InterchangeStudentCohort.xml records failed: 0
+INFO  [file] InterchangeStudent.xml (edfi-xml/StudentParent)
+INFO  [file] InterchangeStudent.xml records considered: 78
+INFO  [file] InterchangeStudent.xml records ingested successfully: 78
+INFO  [file] InterchangeStudent.xml records failed: 0
+INFO  [file] InterchangeStudentAssessment-Rbraverman3rdgrade.xml (edfi-xml/StudentAssessment)
+INFO  [file] InterchangeStudentAssessment-Rbraverman3rdgrade.xml records considered: 3
+INFO  [file] InterchangeStudentAssessment-Rbraverman3rdgrade.xml records ingested successfully: 3
+INFO  [file] InterchangeStudentAssessment-Rbraverman3rdgrade.xml records failed: 0
+INFO  [file] InterchangeStudentGrade.xml (edfi-xml/StudentGrades)
+INFO  [file] InterchangeStudentGrade.xml records considered: 709
+INFO  [file] InterchangeStudentGrade.xml records ingested successfully: 709
+INFO  [file] InterchangeStudentGrade.xml records failed: 0
+INFO  [file] InterchangeAssessmentMetadata-CCS-Math.xml (edfi-xml/AssessmentMetadata)
+INFO  [file] InterchangeAssessmentMetadata-CCS-Math.xml records considered: 574
+INFO  [file] InterchangeAssessmentMetadata-CCS-Math.xml records ingested successfully: 574
+INFO  [file] InterchangeAssessmentMetadata-CCS-Math.xml records failed: 0
+INFO  [file] InterchangeStudentEnrollment.xml (edfi-xml/StudentEnrollment)
+INFO  [file] InterchangeStudentEnrollment.xml records considered: 492
+INFO  [file] InterchangeStudentEnrollment.xml records ingested successfully: 492
+INFO  [file] InterchangeStudentEnrollment.xml records failed: 0
+INFO  [file] InterchangeMasterSchedule.xml (edfi-xml/MasterSchedule)
+INFO  [file] InterchangeMasterSchedule.xml records considered: 97
+INFO  [file] InterchangeMasterSchedule.xml records ingested successfully: 97
+INFO  [file] InterchangeMasterSchedule.xml records failed: 0
+INFO  [file] InterchangeStudentAssessment-Rbraverman1stgrade.xml (edfi-xml/StudentAssessment)
+INFO  [file] InterchangeStudentAssessment-Rbraverman1stgrade.xml records considered: 4
+INFO  [file] InterchangeStudentAssessment-Rbraverman1stgrade.xml records ingested successfully: 4
+INFO  [file] InterchangeStudentAssessment-Rbraverman1stgrade.xml records failed: 0
+INFO  [file] InterchangeStaffAssociation.xml (edfi-xml/StaffAssociation)
+INFO  [file] InterchangeStaffAssociation.xml records considered: 41
+INFO  [file] InterchangeStaffAssociation.xml records ingested successfully: 41
+INFO  [file] InterchangeStaffAssociation.xml records failed: 0
+INFO  [file] InterchangeStudentAssessment-Rbraverman4thgrade.xml (edfi-xml/StudentAssessment)
+INFO  [file] InterchangeStudentAssessment-Rbraverman4thgrade.xml records considered: 2
+INFO  [file] InterchangeStudentAssessment-Rbraverman4thgrade.xml records ingested successfully: 2
+INFO  [file] InterchangeStudentAssessment-Rbraverman4thgrade.xml records failed: 0
+INFO  [file] InterchangeStudentProgram.xml (edfi-xml/StudentProgram)
+INFO  [file] InterchangeStudentProgram.xml records considered: 6
+INFO  [file] InterchangeStudentProgram.xml records ingested successfully: 6
+INFO  [file] InterchangeStudentProgram.xml records failed: 0
+INFO  [file] InterchangeAssessmentMetadata-READ2.xml (edfi-xml/AssessmentMetadata)
+INFO  [file] InterchangeAssessmentMetadata-READ2.xml records considered: 2
+INFO  [file] InterchangeAssessmentMetadata-READ2.xml records ingested successfully: 2
+INFO  [file] InterchangeAssessmentMetadata-READ2.xml records failed: 0
+INFO  [file] InterchangeAttendance.xml (edfi-xml/Attendance)
+INFO  [file] InterchangeAttendance.xml records considered: 75
+INFO  [file] InterchangeAttendance.xml records ingested successfully: 75
+INFO  [file] InterchangeAttendance.xml records failed: 0
+INFO  [file] InterchangeAssessmentMetadata-AP-Eng.xml (edfi-xml/AssessmentMetadata)
+INFO  [file] InterchangeAssessmentMetadata-AP-Eng.xml records considered: 2
+INFO  [file] InterchangeAssessmentMetadata-AP-Eng.xml records ingested successfully: 2
+INFO  [file] InterchangeAssessmentMetadata-AP-Eng.xml records failed: 0
+INFO  [file] InterchangeStudentAssessment-Lkim8thgrade.xml (edfi-xml/StudentAssessment)
+INFO  [file] InterchangeStudentAssessment-Lkim8thgrade.xml records considered: 112
+INFO  [file] InterchangeStudentAssessment-Lkim8thgrade.xml records ingested successfully: 112
+INFO  [file] InterchangeStudentAssessment-Lkim8thgrade.xml records failed: 0
+INFO  [file] InterchangeStudentDiscipline.xml (edfi-xml/StudentDiscipline)
+INFO  [file] InterchangeStudentDiscipline.xml records considered: 8
+INFO  [file] InterchangeStudentDiscipline.xml records ingested successfully: 8
+INFO  [file] InterchangeStudentDiscipline.xml records failed: 0
+INFO  [file] InterchangeStudentAssessment-CgrayAP-English.xml (edfi-xml/StudentAssessment)
+INFO  [file] InterchangeStudentAssessment-CgrayAP-English.xml records considered: 50
+INFO  [file] InterchangeStudentAssessment-CgrayAP-English.xml records ingested successfully: 50
+INFO  [file] InterchangeStudentAssessment-CgrayAP-English.xml records failed: 0
+INFO  [file] InterchangeStudentAssessment-Lkim6thgrade.xml (edfi-xml/StudentAssessment)
+INFO  [file] InterchangeStudentAssessment-Lkim6thgrade.xml records considered: 2
+INFO  [file] InterchangeStudentAssessment-Lkim6thgrade.xml records ingested successfully: 2
+INFO  [file] InterchangeStudentAssessment-Lkim6thgrade.xml records failed: 0
+INFO  [file] InterchangeStudentAssessment-Lkim7thgrade.xml (edfi-xml/StudentAssessment)
+INFO  [file] InterchangeStudentAssessment-Lkim7thgrade.xml records considered: 3
+INFO  [file] InterchangeStudentAssessment-Lkim7thgrade.xml records ingested successfully: 3
+INFO  [file] InterchangeStudentAssessment-Lkim7thgrade.xml records failed: 0
+INFO  [file] InterchangeEducationOrganization.xml (edfi-xml/EducationOrganization)
+INFO  [file] InterchangeEducationOrganization.xml records considered: 102
+INFO  [file] InterchangeEducationOrganization.xml records ingested successfully: 102
+INFO  [file] InterchangeEducationOrganization.xml records failed: 0
+INFO  [file] InterchangeAssessmentMetadata-StateTest.xml (edfi-xml/AssessmentMetadata)
+INFO  [file] InterchangeAssessmentMetadata-StateTest.xml records considered: 2
+INFO  [file] InterchangeAssessmentMetadata-StateTest.xml records ingested successfully: 2
+INFO  [file] InterchangeAssessmentMetadata-StateTest.xml records failed: 0
+INFO  [configProperty] tenantId: IL
+INFO  All records processed successfully.
+INFO  Processed 3029 records.

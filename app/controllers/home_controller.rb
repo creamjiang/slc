@@ -61,7 +61,7 @@ class HomeController < ApplicationController
     student_json = SlcResource.fetch_students(session[:token])[0]
     student_name_obj = student_json["name"]
     @student_name = "#{student_name_obj['firstName']} #{student_name_obj['lastSurname']}"
-
+    @parent_comment = ""
     @title = "Reading"
     @reading_level = "G"
     @description = "Area of focus:"

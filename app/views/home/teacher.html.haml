@@ -38,9 +38,13 @@
     %p= @parent_tip_list
   -#=render "sample_video"
   -#=render "message_to_teacher"
-  = check_box_tag "sight_words", "Video: Sight Words"
-  Video: Sight Words
-  %p= @parent_comment
+  %p
+    - if @parent_comment == ""
+      =image_tag("checkmark-empty.png")
+    - else
+      =image_tag("checkmark-green.png")
+    Video: Sight Words
+  %span= @parent_comment
   %hr
   .child_activity
     %p.pbs= @child_activity_info

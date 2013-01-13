@@ -34,6 +34,10 @@
 @include h5bp-media;
 @import "http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css";
 
+a{color: #000099; text-decoration: none;}
+a:hover{color: #6666DD}
+
+
 pre {
   max-width:750px;
   //font-size:10px;

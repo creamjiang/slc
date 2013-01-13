@@ -35,7 +35,7 @@
 
 pre {
   max-width:750px;
-  font-size:10px;
+  //font-size:10px;
   float:left;
   overflow: hidden;
 }
@@ -66,6 +66,8 @@ h1{margin:0 5px 0 5px; padding:0;}
   }
 }
 .level{
+  padding: 5px 10px 5px 10px;
+  //margin: 0 10px 0 15px;
   background-color: #EEEEEE;
   float: right;
   border: solid 1px #333333;
@@ -76,32 +78,61 @@ h1{margin:0 5px 0 5px; padding:0;}
   font-size: 16px;;
 
 }
-h2{margin:0 5px 0 5px; padding:0;}
+h2{margin:0 5px 0 5px; padding:0; font-size: 24px; font-family: Arial; font-weight: BOLD}
 .focus_dropdown{
+  background-color: #ECECEC;
+  text-decoration: none;
   float:left;
   border: solid 1px #333333;
 }
+.focus_dropdown:hover{
+  text-decoration: none;
+  background-color: #DFDFDF;
+  cursor: pointer;
+}
 .focus_title{
-  background-color: #ECECEC;
+  margin: 0 5px 0 5px;
   float: left;
 }
 .plus_minus{
-  background-color: #ECECEC;
+  margin: 0 5px 0 5px;
   float: left;
   border-right: #BBBBBB solid 1px;;
 }
-.focus_info{
-  background-color: #EEEEEE;
-  float: left;
+.focus_text{
+  float:left;
   margin-left: 10px;
-  border: solid 1px #333333;
+  text-decoration: none;
 }
+.focus_text:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+//.focus_info{
+//  background-color: #EEEEEE;
+//  -moz-border-radius: 15px;
+//  border-radius: 15px;
+//  float: left;
+//  margin-left: 10px;
+//  border: solid 1px #333333;
+//  padding: 0 5px 0 5px;
+//}
+//.focus_info:hover{
+//  background-color: #DFDFDF;
+//  cursor: pointer;
+//}
+//
 .focus_details{
-  display:hidden;
+  display:none;
+}
+.child_activity{
+  margin-bottom: 20px;;
 }
 p{
   font-family: Arial;
   font-weight: NORMAL;
   font-size: 18px;
 }
-
+.pbs{
+  margin-bottom: 10px;
+}

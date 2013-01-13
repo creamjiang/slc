@@ -2,24 +2,31 @@
   .title
     %h1= @title
   .level
+    level
     %h1= @reading_level
   .clear-float
   .description
     %p= @description
   .focus_dropdown
     .plus_minus
-      %h2 +
+      %h1 +
     .focus_title
-      %h2= @focus_area
-  .focus_info
-    %h2= @focus_area_info
+      %h1= @focus_area
+  -#.focus_info
+  -#  %h2= @focus_area_info
+  .focus_text
+    = @focus_area_text
   .clear-float
+  %hr
   .focus_details
     %p= @focus_area_details
   .parent_tip
     %p= @parent_tip
     %p= @parent_tip_list
   =render "sample_video"
+  %hr
   .child_activity
-    %p= @child_activity_info
-    %p= @child_activity_list
+    %p.pbs= @child_activity_info
+    Act it out! A reader’s theatre game.<br />
+    = link_to 'Power Words', "http://pbskids.org/wordgirl/games/powerwords/"
+    -#%p= @child_activity_list

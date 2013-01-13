@@ -42,6 +42,13 @@ class SlcResource
 
   end
 
+  def self.fetch_parent_comment(token, teacherId)
+    teacherId ||= "4069feb780f3a69b7d39cfea94f5728600152633_id" #Amy Kopel
+    uri = "/staff/#{teacherId}/custom"
+
+    fetch_resource(uri, token)
+  end
+
   def self.post(uri, token, data)
     clean_uri = uri.sub(/^\//, '')
     uri = URI.parse("#{Rails.application.config.REST_URL}/#{clean_uri}")

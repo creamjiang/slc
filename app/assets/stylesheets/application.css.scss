@@ -72,6 +72,21 @@ h1{margin:0 5px 0 5px; padding:0;}
   background-color: #EEEEEE;
   float: right;
   border: solid 1px #333333;
+  width:76px;
+  height:76px;
+}
+.label {
+  font-size:9px;
+}
+.letter {
+  margin-top:-10px;
+  font-size:50px;
+  top:-8px;
+  position: relative;
+}
+#level-inner {
+  position:relative;
+  left: 16px;
 }
 #content{
   font-family: Arial;
@@ -111,6 +126,7 @@ h3{margin:0 5px 0 5px; padding:0; font-size: 24px; font-family: Arial; font-weig
   text-decoration: underline;
   cursor: pointer;
 }
+.fl{float: left}
 .fr{float: left}
 .fr{float: right}
 //.focus_info{

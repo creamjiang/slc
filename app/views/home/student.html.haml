@@ -1,21 +1,23 @@
 #content
-  .title
-    %h1= @student_name
-  .level
-    level
-    %h3= @reading_level
-  .clear-float
-  .description
-    %p= @description
-  .focus_dropdown
-    .plus_minus
-      %h3 +
-    .focus_title
-      %h3= @focus_area
-  -#.focus_info
-  -#  %h3= @focus_area_info
-  #info.focus_text
-    = @focus_area_text
+  #left_col.fl
+    #student
+      %h1= @student_name
+    .description
+      %span= @description
+    .focus_dropdown
+      .plus_minus
+        %h3 +
+      .focus_title
+        %h3= @focus_area
+    -#.focus_info
+    -#  %h3= @focus_area_info
+    #info.focus_text
+      = @focus_area_text
+  #right_col.fr
+    .level
+      #level-inner
+        %span.label reading level
+        %span.letter= @reading_level
   .clear-float
   .focus_details
     -#%p= @focus_area_details

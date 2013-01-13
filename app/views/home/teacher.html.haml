@@ -1,0 +1,51 @@
+#content
+  #left_col.fl
+    #student
+      %h1= @student_name
+    .description
+      %p= @description
+    .focus_dropdown
+      .plus_minus
+        %h3 +
+      .focus_title
+        %h3= @focus_area
+    -#.focus_info
+    -#  %h3= @focus_area_info
+    #info.focus_text
+      = @focus_area_text
+  #right_col.fr
+    .level
+      -##level-inner
+      %span.label reading level
+      %span.letter= @reading_level
+  .clear-float
+  .focus_details
+    -#%p= @focus_area_details
+    %table.focus_drop
+      %tr
+        %td
+          %p.tablesm Speed
+        %td.right_side
+          =image_tag("checkmark-good.png")
+      %tr
+        %td
+          %p.tablesm Accuracy
+        %td.right_side
+          =image_tag("checkmark-warn.png")
+  %hr
+  .parent_tip
+    %p= @parent_tip
+    %p= @parent_tip_list
+  -#=render "sample_video"
+  -#=render "message_to_teacher"
+  = check_box_tag "sight_words", "Video: Sight Words"
+  Video: Sight Words
+  %p= @parent_comment
+  %hr
+  .child_activity
+    %p.pbs= @child_activity_info
+    = link_to 'Act it out! A reader’s theatre game.', "http://www.greatschools.org/", target:"_blank"
+    <br />
+    = link_to 'Power Words', "http://pbskids.org/wordgirl/games/powerwords/", target:"_blank"
+    -#%p= @child_activity_list
+=render "dialog"

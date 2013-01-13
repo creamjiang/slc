@@ -62,6 +62,16 @@ class HomeController < ApplicationController
     build_json_display(json)
   end
 
+  def video
+    #:category => @category, :level => @level, :player_id => @player_id, :media_id => @video.media_id
+
+    @cms_content_id = '6891'
+    @category = ''
+    @level = 'level'
+    @player_id = 'player_id'
+    @media_id = '?'
+  end
+
 
 
   def browse

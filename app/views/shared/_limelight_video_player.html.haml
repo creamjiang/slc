@@ -1,0 +1,17 @@
+- width ||= (is_mobile? ? 300 : 480)
+- height ||= (is_mobile? ? 168 : 269)
+.LimelightEmbeddedPlayer
+  %script{:src => "http://assets.delvenetworks.com/player/embed.js"}
+  %object{:type => "application/x-shockwave-flash",
+          :id => "limelight_player_#{player_id}",
+          :name => "limelight_player_#{player_id}",
+          :class => "LimelightEmbeddedPlayerFlash",
+          :width => width,
+          :height => height,
+          :data => "http://assets.delvenetworks.com/player/loader.swf"}
+    %param{:name => "movie", :value => "http://assets.delvenetworks.com/player/loader.swf"}
+    %param{:name => "wmode", :value => "transparent"}
+    %param{:name => "allowScriptAccess", :value => "always"}
+    %param{:name => "allowFullScreen", :value => "true"}
+    %param{:name => "flashVars", :value => "playerForm=24ef9ef9bdf149f6a92abba11b52d291&mediaId=#{media_id}"}
+  %script= "LimelightPlayerUtil.initEmbed('limelight_player_#{player_id}');"

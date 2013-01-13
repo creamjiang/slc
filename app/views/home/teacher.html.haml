@@ -44,7 +44,9 @@
     - else
       =image_tag("checkmark-green.png")
     Video: Sight Words
-  %span= @parent_comment
+  - if @parent_comment != ""
+    %span.parent_comment= @parent_comment
+
   %hr
   .child_activity
     %p.pbs= @child_activity_info

@@ -3,18 +3,18 @@
     %h1= @student_name
   .level
     level
-    %h1= @reading_level
+    %h2= @reading_level
   .clear-float
   %hr
   .description
     %p= @description
   .focus_dropdown
     .plus_minus
-      %h1 +
+      %h3 +
     .focus_title
-      %h1= @focus_area
+      %h3= @focus_area
   -#.focus_info
-  -#  %h2= @focus_area_info
+  -#  %h3= @focus_area_info
   .focus_text
     = @focus_area_text
   .clear-float

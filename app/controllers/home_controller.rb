@@ -24,7 +24,17 @@ class HomeController < ApplicationController
   end
 
   def student
-    @student_name = "Billy Jackson"
+    if session[:token].nil?
+      session[:token] = get_access_token(params['code'])
+    end
+    teacher_json = SlcResource.fetch_teacher(nil, session[:token])["name"]
+    student_json = SlcResource.fetch_students(session[:token])[0]
+    @teacher_last_name = teacher_json["lastSurname"]
+
+    student_json = SlcResource.fetch_students(session[:token])[0]
+    student_name_obj = student_json["name"]
+    @student_name = "#{student_name_obj['firstName']} #{student_name_obj['lastSurname']}"
+
     @title = "Reading"
     @reading_level = "G"
     @description = "Billy's area of focus:"
@@ -85,6 +95,7 @@ class HomeController < ApplicationController
 
     json = SlcResource.fetch_resource(params[:path], session[:token])
 
+
     @token = session[:token]
 
     build_json_display(json)
@@ -105,7 +116,7 @@ class HomeController < ApplicationController
     @display_objects = []
 
     json.each do |item|
-      saved_links = item['links']
+      saved_links = item['links'] ||= []
       item['links'] = nil
       display_object = {json:JSON.pretty_generate(item), links: saved_links}
       @display_objects << display_object

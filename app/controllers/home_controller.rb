@@ -37,7 +37,7 @@ class HomeController < ApplicationController
 
     @title = "Reading"
     @reading_level = "G"
-    @description = "Billy's area of focus:"
+    @description = "#{student_name_obj['firstName']}'s area of focus:"
     @focus_area = "Fluency"
     @focus_area_details = "I am the focus details"
     @focus_area_info = "cc"

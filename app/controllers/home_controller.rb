@@ -26,13 +26,13 @@ class HomeController < ApplicationController
   def student
     @title = "Reading"
     @reading_level = "G"
-    @description = "This is a display for description"
+    @description = "Billy's area of focus:"
     @focus_area = "Fluency"
-    @focus_area_details = "I am the details"
-    @focus_area_info = "This is the link to info I think"
-    @parent_tip = "Parent Tip"
-    @parent_tip_list = "need to discuss how this works - I think that haml has list iteration"
-    @child_activity_info = "activity information"
+    @focus_area_details = "I am the focus details"
+    @focus_area_info = "?"
+    @parent_tip = "For You:"
+    #@parent_tip_list = "need to discuss how this works - I think that haml has list iteration"
+    @child_activity_info = "For you to do with Billy"
     @child_activity_list = "another list"
   end
 

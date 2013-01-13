@@ -1,16 +1,25 @@
 #content
   .title
     %h1= @title
-    %p= @reading_level
+  .level
+    %h1= @reading_level
+  .clear-float
   .description
     %p= @description
-  .focus_area
-    %p= @focus_area
+  .focus_dropdown
+    .plus_minus
+      %h2 +
+    .focus_title
+      %h2= @focus_area
+  .focus_info
+    %h2= @focus_area_info
+  .clear-float
+  .focus_details
     %p= @focus_area_details
-    %p= @focus_area_info
   .parent_tip
     %p= @parent_tip
     %p= @parent_tip_list
+  =render "sample_video"
   .child_activity
     %p= @child_activity_info
     %p= @child_activity_list

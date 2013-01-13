@@ -52,6 +52,46 @@ pre {
 .clear-float {
   clear:both;
 }
-
+body {
+  width: 500px;
+  margin: 10px
+}
+h1{margin:0 5px 0 5px; padding:0;}
+.title{
+  float: left;
+  font{
+    font-family: Arial;
+    font-weight: BOLD;
+    font-size: 20px;;
+  }
+}
+.level{
+  background-color: #EEEEEE;
+  float: right;
+  border: solid 1px #333333;
+}
+h2{margin:0 5px 0 5px; padding:0;}
+.focus_dropdown{
+  float:left;
+  border: solid 1px #333333;
+}
+.focus_title{
+  background-color: #ECECEC;
+  float: left;
+}
+.plus_minus{
+  background-color: #ECECEC;
+  float: left;
+  border-right: #BBBBBB solid 1px;;
+}
+.focus_info{
+  background-color: #EEEEEE;
+  float: left;
+  margin-left: 10px;
+  border: solid 1px #333333;
+}
+.focus_details{
+  display:hidden;
+}
 
 

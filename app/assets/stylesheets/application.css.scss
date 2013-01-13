@@ -70,11 +70,11 @@ h1{margin:0 5px 0 5px; padding:0;}
   float: right;
   border: solid 1px #333333;
 }
-p{
-  font{
-    font-family: Arial;
-    font-size: 14px;;
-  }
+#content{
+  font-family: Arial;
+  font-weight: NORMAL;
+  font-size: 16px;;
+
 }
 h2{margin:0 5px 0 5px; padding:0;}
 .focus_dropdown{
@@ -99,5 +99,9 @@ h2{margin:0 5px 0 5px; padding:0;}
 .focus_details{
   display:hidden;
 }
-
+p{
+  font-family: Arial;
+  font-weight: NORMAL;
+  font-size: 18px;
+}
 

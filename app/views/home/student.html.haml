@@ -5,7 +5,6 @@
     level
     %h3= @reading_level
   .clear-float
-  %hr
   .description
     %p= @description
   .focus_dropdown
@@ -18,13 +17,39 @@
   #info.focus_text
     = @focus_area_text
   .clear-float
-  %hr
   .focus_details
-    %p= @focus_area_details
+    -#%p= @focus_area_details
+    %table.focus_drop
+      %tr
+        %td
+          %p.tablesm Speed
+        %td.right_side
+          =image_tag("checkmark-good.png")
+      %tr
+        %td
+          %p.tablesm Accuracy
+        %td.right_side
+          =image_tag("checkmark-warn.png")
+  %hr
   .parent_tip
     %p= @parent_tip
     %p= @parent_tip_list
   =render "sample_video"
+  .fr
+    %button.comment_button
+      %h4 Comment to teacher
+  %form.comment_form
+    %p.bottom Your Comment
+    %textarea
+  .fr.comment_buttons
+    %button.comment_cancel
+      %h4 Cancel
+    %button.comment_submit
+      %h4 Send
+  .comment_reply
+    %p Thank you! Your message has been sent.
+  .clear-float
+
   %hr
   .child_activity
     %p.pbs= @child_activity_info

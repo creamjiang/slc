@@ -17,12 +17,12 @@
 
 $(".focus_dropdown").click(function(){
     if($(".focus_details").css("display") == "none"){
-        $(".focus_details").css("display", "block");
-        $(".plus_minus h1").html("-");
+        $(".focus_details").show('fast');
+        $(".plus_minus h3").html("-");
     }
     else{
-        $(".focus_details").css("display", "none");
-        $(".plus_minus h1").html("+");
+        $(".focus_details").hide('fast');
+        $(".plus_minus h3").html("+");
     }
 });
 
@@ -30,4 +30,21 @@ $(function() {
     $('#info').click(function() {
         $( "#dialog" ).dialog();
     });
+});
+$(".comment_button").click(function(){
+    $(".comment_button").hide();
+    $(".comment_buttons").show();
+    $(".comment_form").show();
+});
+
+$(".comment_submit").click(function(){
+    $(".comment_form").hide()
+    $(".comment_buttons").hide();
+    $(".comment_reply").show();
+});
+
+$(".comment_cancel").click(function(){
+    $(".comment_form").hide()
+    $(".comment_buttons").hide();
+    $(".comment_button").show();
 });

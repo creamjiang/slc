@@ -15,12 +15,29 @@
 //= require h5bp
 $(".focus_dropdown").click(function(){
     if($(".focus_details").css("display") == "none"){
-        $(".focus_details").css("display", "block");
+        $(".focus_details").show('fast');
         $(".plus_minus h1").html("-");
     }
     else{
-        $(".focus_details").css("display", "none");
+        $(".focus_details").hide('fast');
         $(".plus_minus h1").html("+");
     }
 });
 
+$(".comment_button").click(function(){
+    $(".comment_button").hide();
+    $(".comment_buttons").show();
+    $(".comment_form").show();
+});
+
+$(".comment_submit").click(function(){
+    $(".comment_form").hide()
+    $(".comment_buttons").hide();
+    $(".comment_reply").show();
+});
+
+$(".comment_cancel").click(function(){
+    $(".comment_form").hide()
+    $(".comment_buttons").hide();
+    $(".comment_button").show();
+});

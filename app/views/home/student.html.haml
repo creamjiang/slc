@@ -5,7 +5,6 @@
     level
     %h2= @reading_level
   .clear-float
-  %hr
   .description
     %p= @description
   .focus_dropdown
@@ -18,13 +17,25 @@
   .focus_text
     = @focus_area_text
   .clear-float
-  %hr
   .focus_details
     %p= @focus_area_details
+  %hr
   .parent_tip
     %p= @parent_tip
     %p= @parent_tip_list
   =render "sample_video"
+  .fr
+    %button.comment_button  Comment to teacher
+  %form.comment_form
+    %p Your Comment
+    %textarea
+  .fr.comment_buttons
+    %button.comment_cancel  Cancel
+    %button.comment_submit  Send
+  .comment_reply
+    %p Thank you! Your message has been sent.
+  .clear-float
+
   %hr
   .child_activity
     %p.pbs= @child_activity_info

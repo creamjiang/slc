@@ -16,11 +16,11 @@
 $(".focus_dropdown").click(function(){
     if($(".focus_details").css("display") == "none"){
         $(".focus_details").show('fast');
-        $(".plus_minus h1").html("-");
+        $(".plus_minus h3").html("-");
     }
     else{
         $(".focus_details").hide('fast');
-        $(".plus_minus h1").html("+");
+        $(".plus_minus h3").html("+");
     }
 });
 

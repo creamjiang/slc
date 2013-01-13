@@ -95,7 +95,9 @@ h3{margin:0 5px 0 5px; padding:0; font-size: 24px; font-family: Arial; font-weig
   float: left;
 }
 .plus_minus{
-  margin: 0 5px 0 5px;
+  text-align: center;
+  //margin: 0 5px 0 5px;
+  width:35px;
   float: left;
   border-right: #BBBBBB solid 1px;;
 }
@@ -125,7 +127,9 @@ h3{margin:0 5px 0 5px; padding:0; font-size: 24px; font-family: Arial; font-weig
 //}
 //
 .focus_details{
+  border: solid 1px #AAAAAA;
   display:none;
+ padding: 10px;
 }
 .child_activity{
   margin-bottom: 20px;;
@@ -148,6 +152,13 @@ p{
 #header p {
 
 }
+.comment_button{margin-right: 20px; margin-top: 10px;}
 .comment_form{display: none}
 .comment_reply{display: none}
-.comment_buttons{display: none}
+.comment_buttons{display: none; padding-right: 20px;}
+
+table.focus_drop tr td.right_side{padding: 0 0 0 55px;}
+table.focus_drop{margin: 5px;}
+p.tablesm{margin: 0; padding: 0}
+textarea{ width: 480px; height: 35px;}
+.bottom{margin-bottom: 0; padding-bottom: 0}

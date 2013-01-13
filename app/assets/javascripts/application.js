@@ -38,9 +38,20 @@ $(".comment_button").click(function(){
 });
 
 $(".comment_submit").click(function(){
-    $(".comment_form").hide()
-    $(".comment_buttons").hide();
-    $(".comment_reply").show();
+    // send message to staff record on SLC
+    $.ajax({
+        type: "POST",
+        url: '/home/send_message_to_teacher',
+        data: {message: $.trim($('#comment_text_area').val())}
+    }).done(function() {
+                $(".comment_form").hide();
+                $(".comment_buttons").hide();
+                $(".comment_reply").show();
+    }).fail(function() {
+        alert('We\'re sorry, the engineers didn\'t get much sleep last night.');
+    });
+
+
 });
 
 $(".comment_cancel").click(function(){

@@ -91,14 +91,22 @@ class HomeController < ApplicationController
       redirect_to :root
     end
 
-    params[:path] ||= '/home'
-
-    json = SlcResource.fetch_resource(params[:path], session[:token])
+    params[:path] ||= '/staff/4069feb780f3a69b7d39cfea94f5728600152633_id/custom'
+    #params[:path] ||= '/home'
 
 
     @token = session[:token]
 
+
+    json = SlcResource.fetch_resource(params[:path], session[:token])
+
     build_json_display(json)
+  end
+
+  def send_message_to_teacher
+    message = params[:message]
+    SlcResource.send_message_to_teacher(session[:token], message, nil)
+    render json: {success:true}
   end
 
   def some_students

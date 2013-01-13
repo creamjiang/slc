@@ -8,6 +8,7 @@ GSSlc::Application.routes.draw do
   match 'students' => 'home#some_students', :as => :students_resource
   match 'student' => 'home#student', :as => :student_resource
   match 'assessments' => 'home#assessments', :as => :assessments_resource
+  post "home/send_message_to_teacher", :as => :send_message_resource
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

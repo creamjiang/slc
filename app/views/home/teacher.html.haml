@@ -48,8 +48,10 @@
   %hr
   .child_activity
     %p.pbs= @child_activity_info
+    =image_tag("checkmark-empty.png")
     = link_to 'Act it out! A reader’s theatre game.', "http://www.greatschools.org/", target:"_blank"
     <br />
+    =image_tag("checkmark-empty.png")
     = link_to 'Power Words', "http://pbskids.org/wordgirl/games/powerwords/", target:"_blank"
     -#%p= @child_activity_list
 =render "dialog"

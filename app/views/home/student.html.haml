@@ -35,20 +35,7 @@
     %p= @parent_tip
     %p= @parent_tip_list
   =render "sample_video"
-  .fr
-    %button.comment_button
-      %h4 Comment to teacher
-  %form.comment_form
-    %p.bottom Your Comment
-    %textarea#comment_text_area
-  .fr.comment_buttons
-    %button.comment_cancel
-      %h4 Cancel
-    %button.comment_submit
-      %h4 Send
-  .comment_reply
-    %p Thank you! Your message has been sent via SLC.
-  .clear-float
+  =render "message_to_teacher"
 
   %hr
   .child_activity

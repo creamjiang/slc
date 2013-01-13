@@ -24,6 +24,7 @@ class HomeController < ApplicationController
   end
 
   def student
+    @student_name = "Billy Jackson"
     @title = "Reading"
     @reading_level = "G"
     @description = "Billy's area of focus:"

@@ -13,5 +13,14 @@
 //= require jquery
 //= require jquery_ujs
 //= require h5bp
-.click
+$(".focus_dropdown").click(function(){
+    if($(".focus_details").css("display") == "none"){
+        $(".focus_details").css("display", "block");
+        $(".plus_minus h1").html("-");
+    }
+    else{
+        $(".focus_details").css("display", "none");
+        $(".plus_minus h1").html("+");
+    }
+});
 

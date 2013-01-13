@@ -108,6 +108,8 @@ h2{margin:0 5px 0 5px; padding:0; font-size: 24px; font-family: Arial; font-weig
   text-decoration: underline;
   cursor: pointer;
 }
+.fr{float: left}
+.fr{float: right}
 //.focus_info{
 //  background-color: #EEEEEE;
 //  -moz-border-radius: 15px;
@@ -137,5 +139,5 @@ p{
   margin-bottom: 10px;
 }
 #header{
-  background-color:#B7CCCC;
+  padding:5px; margin-bottom: 10px; background-color:#B7CCCC;
 }

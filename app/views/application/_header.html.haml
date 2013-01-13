@@ -1,5 +1,13 @@
 %header#header
-  %h1
-    R3 Radar SLC Prototype
-    %a{:href => '/logout'} [Sign out]
-  %hr
+  .title
+    %h1= @student_name
+  .fr
+    =image_tag("3r-radar.png")
+    <br />
+    .fr
+      %a{:href => '/home'} [Home] |
+      %a{:href => '/logout'} [Sign out]
+
+  .clear-float
+
+  -#%hr

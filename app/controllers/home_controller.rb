@@ -43,9 +43,9 @@ class HomeController < ApplicationController
     @focus_area_details = "I am the focus details"
     @focus_area_info = "cc"
     @focus_area_text = "What's this?"
-    @parent_tip = "For you:"
+    @parent_tip = "Parent Tips. Suggestions for you:"
     #@parent_tip_list = "need to discuss how this works - I think that haml has list iteration"
-    @child_activity_info = "For you to do with #{student_name_obj['firstName']}"
+    @child_activity_info = "Activities. Suggestions for you to do with #{student_name_obj['firstName']}:"
     @child_activity_list = "another list"
   end
 

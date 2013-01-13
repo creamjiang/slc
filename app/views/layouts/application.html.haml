@@ -5,7 +5,10 @@
 
   %body{ :class => "#{ controller.controller_name }" }
     = render "chromeframe"
-    = render "header"
+    - if session[:token].nil?
+      = render "guest_header"
+    - else
+      = render "header"
 
     #main{ :role => "main" }
       = render "flashes"

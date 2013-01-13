@@ -7,6 +7,7 @@
 //-----------------------------------------
 @import "variables";
 
+
 //-----------------------------------------
 // Imports
 //-----------------------------------------
@@ -31,7 +32,7 @@
 //-----------------------------------------
 @include h5bp-helpers;
 @include h5bp-media;
-
+@import "http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css";
 
 pre {
   max-width:750px;
@@ -147,4 +148,16 @@ p{
 }
 #header p {
 
+}
+
+.tooltipcontainer {
+  position: relative;
+}
+.tooltip {
+  display: none;
+  position: absolute;
+  /* More positioning, heigh, width, etc */
+}
+a:hover .tooltip {
+  display: block;
 }

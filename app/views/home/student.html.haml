@@ -3,7 +3,7 @@
     %h1= @student_name
   .level
     level
-    %h2= @reading_level
+    %h3= @reading_level
   .clear-float
   %hr
   .description
@@ -15,7 +15,7 @@
       %h3= @focus_area
   -#.focus_info
   -#  %h3= @focus_area_info
-  .focus_text
+  #info.focus_text
     = @focus_area_text
   .clear-float
   %hr
@@ -31,3 +31,4 @@
     Act it out! A reader’s theatre game.<br />
     = link_to 'Power Words', "http://pbskids.org/wordgirl/games/powerwords/"
     -#%p= @child_activity_list
+=render "dialog"

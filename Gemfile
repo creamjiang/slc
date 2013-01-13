@@ -28,6 +28,8 @@ gem 'html5-rails'
 gem 'jquery-rails'
 gem 'haml'
 gem 'nokogiri'
+gem 'jquery-ui-rails'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

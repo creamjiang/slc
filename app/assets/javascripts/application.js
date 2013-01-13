@@ -13,6 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require h5bp
+//= require jquery.ui.all
+
 $(".focus_dropdown").click(function(){
     if($(".focus_details").css("display") == "none"){
         $(".focus_details").css("display", "block");
@@ -24,3 +26,8 @@ $(".focus_dropdown").click(function(){
     }
 });
 
+$(function() {
+    $('#info').click(function() {
+        $( "#dialog" ).dialog();
+    });
+});

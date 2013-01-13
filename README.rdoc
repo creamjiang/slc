@@ -1,2 +1,2 @@
 License
-Copyright (c) 2013 3RRadar.com See LICENSE for full license.
+Copyright (c) 2013 GreatSchools.org See LICENSE for full license.

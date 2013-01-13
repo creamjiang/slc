@@ -30,7 +30,7 @@ class HomeController < ApplicationController
     teacher_json = SlcResource.fetch_teacher(nil, session[:token])["name"]
     student_json = SlcResource.fetch_students(session[:token])[0]
     @teacher_last_name = teacher_json["lastSurname"]
-    @teacher_full_name = "#{teacher_json['personalTitlePrefix']} #{teacher_json['firstName']} #{teacher_json['lastSurname']}"
+    @teacher_full_name = "#{teacher_json['personalTitlePrefix']}. #{teacher_json['firstName']} #{teacher_json['lastSurname']}"
 
     student_json = SlcResource.fetch_students(session[:token])[0]
     student_name_obj = student_json["name"]

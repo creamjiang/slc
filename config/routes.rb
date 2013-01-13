@@ -7,6 +7,7 @@ GSSlc::Application.routes.draw do
   match 'browse' => 'home#browse', :as => :browse_resource
   match 'students' => 'home#some_students', :as => :students_resource
   match 'student' => 'home#student', :as => :student_resource
+  match 'student_home' => 'home#student_home', :as => :student_home_resource
   match 'teacher' => 'home#teacher', :as => :teacher_resource
   match 'assessments' => 'home#assessments', :as => :assessments_resource
   post "home/send_message_to_teacher", :as => :send_message_resource

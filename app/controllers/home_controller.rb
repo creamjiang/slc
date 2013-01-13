@@ -76,6 +76,32 @@ class HomeController < ApplicationController
     @child_activity_list = "another list"
   end
 
+  def student_home
+    if session[:token].nil?
+      session[:token] = get_access_token(params['code'])
+    end
+    teacher_json = SlcResource.fetch_teacher(nil, session[:token])["name"]
+    student_json = SlcResource.fetch_students(session[:token])[0]
+    @teacher_last_name = teacher_json["lastSurname"]
+    @teacher_full_name = "#{teacher_json['personalTitlePrefix']}. #{teacher_json['firstName']} #{teacher_json['lastSurname']}"
+
+    student_json = SlcResource.fetch_students(session[:token])[0]
+    student_name_obj = student_json["name"]
+    @student_name = "#{student_name_obj['firstName']} #{student_name_obj['lastSurname']}"
+
+    @title = "Reading"
+    @reading_level = "G"
+    @description = "Area of focus:"
+    @focus_area = "Fluency"
+    @focus_area_details = "I am the focus details"
+    @focus_area_info = "cc"
+    @focus_area_text = "What's this?"
+    @parent_tip = "Parent Tips. Suggestions for you:"
+    #@parent_tip_list = "need to discuss how this works - I think that haml has list iteration"
+    @child_activity_info = "Activities. Suggestions for you to do with #{student_name_obj['firstName']}:"
+    @child_activity_list = "another list"
+  end
+
   def secure
     if session[:token].nil?
       redirect_to :root

@@ -12,7 +12,7 @@ class HomeController < ApplicationController
 
   def logout
     reset_session
-    redirect_to :root
+    redirect_to :action => "login"
   end
 
   def oauth
@@ -107,11 +107,12 @@ class HomeController < ApplicationController
       redirect_to :root
     end
 
-    json = SlcResource.fetch_students(session[:token])
+    #json = SlcResource.fetch_students(session[:token])
 
     @token = session[:token]
 
-    build_json_display(json)
+    #build_json_display(json)
+    redirect_to :action => "student_home"
   end
 
   def assessments
